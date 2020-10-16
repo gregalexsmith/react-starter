@@ -6,6 +6,7 @@ function Home() {
     <Box width={1}>
       <Heading>Home</Heading>
       <p>A simple react starter application with a few preferences set up</p>
+      <p>Github: https://github.com/gregalexsmith/react-starter</p>
     </Box>
   );
 }

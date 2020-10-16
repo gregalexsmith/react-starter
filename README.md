@@ -1,3 +1,27 @@
+# React Starter
+
+A starting point for React projects with a few things set up:
+
+Styling and Components:
+- [Styled Components](https://styled-components.com/)
+- [Styled System](https://styled-system.com/)
+- [Rebass](https://rebassjs.org/)
+- [React Spinner](https://www.davidhu.io/react-spinners/)
+
+Routing:
+- [React Router](https://reactrouter.com/)
+
+Libraries:
+- [Ramda](https://ramdajs.com/)
+- [Recompose](https://github.com/acdlite/recompose) - for branching logic - will probably phase this out
+
+Other:
+- ESLint & Prettier
+- src directory structure
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

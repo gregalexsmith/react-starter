@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Box } from './';
 
 const Loader = styled(Spinner).attrs({
-  color: '#3649FC',
+  color: 'primary.normal',
 })`
   display: block;
 `;

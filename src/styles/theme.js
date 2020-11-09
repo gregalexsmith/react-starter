@@ -13,7 +13,7 @@ export default {
     neutral: {
       white: '#FFF',
       lightest: '#f8f8f8',
-      light: '#bebebe',
+      light: '#CDD6D8',
       normal: '#656565',
       dark: '#2E2E2E',
       darkest: '#070E17',

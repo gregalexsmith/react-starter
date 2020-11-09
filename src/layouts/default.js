@@ -1,18 +1,20 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { TopBar } from '../features/app';
-import { MainCard, Flex } from '../components';
+import { Navigation } from '../features/app';
+import { SingleColumn } from '../components';
 
 const DefaultLayout = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
     render={matchProps => (
-      <Flex flexDirection="column" height="100%">
-        <TopBar />
-        <MainCard>
+      <>
+        <SingleColumn bg="neutral.lightest">
+          <Navigation />
+        </SingleColumn>
+        <SingleColumn bg="neutral.white" height="100%" pt={6}>
           <Component {...matchProps} />
-        </MainCard>
-      </Flex>
+        </SingleColumn>
+      </>
     )}
   />
 );

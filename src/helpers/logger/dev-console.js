@@ -1,8 +1,8 @@
-const isEnabled = process.env.NODE_ENV === 'development';
+const enabled = process.env.NODE_ENV === 'development';
 
-const log = (...args) => isEnabled && console.log('logger', ...args);
+const log = (...args) => enabled && console.log('logger', ...args);
 
-const error = (...args) => isEnabled && console.error('logger', ...args);
+const error = (...args) => enabled && console.error('logger', ...args);
 
 export default {
   log,

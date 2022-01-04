@@ -5,7 +5,7 @@ const present = !!window.analytics;
 
 const verify = () => enabled && present && window.analytics.page;
 
-const init = () => {
+export const init = () => {
   if (enabled && present) {
     window.analytics.load(CLIENT_ID);
   } else {
@@ -13,12 +13,9 @@ const init = () => {
   }
 };
 
-const page = (...args) => verify() && window.analytics.page(...args);
 
-const track = (...args) => verify() && window.analytics.track(...args);
 
-export default {
-  init,
-  page,
-  track,
-};
+
+export const page = (...args) => verify() && window.analytics.page(...args);
+
+export const track = (...args) => verify() && window.analytics.track(...args);

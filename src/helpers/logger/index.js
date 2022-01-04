@@ -1,5 +1,5 @@
 import { reject, isNil } from 'ramda';
-import analytics from './analytics';
+import * as analytics from './analytics';
 import devConsole from './dev-console';
 
 const init = () => {

@@ -23,6 +23,9 @@ const Navigation = ({ showLinks = true }) => (
   <Flex alignItems="center">
     <Title>React Starter</Title>
 
+
+
+
     <Box mx="auto" />
 
     {showLinks && (

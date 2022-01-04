@@ -13,7 +13,7 @@ Routing:
 
 Libraries:
 - [Ramda](https://ramdajs.com/)
-- [Recompose](https://github.com/acdlite/recompose) - for branching logic - will probably phase this out
+
 
 Other:
 - ESLint & Prettier

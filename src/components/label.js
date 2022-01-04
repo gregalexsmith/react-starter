@@ -9,7 +9,7 @@ const SystemLabel = styled.label`
 
 const Label = styled(SystemLabel).attrs({
   mb: 2,
-  fontWeight: 'bold',
+  fontWeight: 'bold'
 })`
   display: block;
 `;

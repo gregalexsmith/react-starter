@@ -1,4 +1,4 @@
-export default {
+export const theme = {
   colors: {
     background: '#CDD6D8',
     surface: '#FBF8FF',
@@ -8,7 +8,7 @@ export default {
       light: '#C8DAFD',
       normal: '#3649FC',
       dark: '#2A44F6',
-      darkest: '#0007A6',
+      darkest: '#0007A6'
     },
     neutral: {
       white: '#FFF',
@@ -16,8 +16,8 @@ export default {
       light: '#CDD6D8',
       normal: '#656565',
       dark: '#2E2E2E',
-      darkest: '#070E17',
-    },
+      darkest: '#070E17'
+    }
   },
   breakpoints: ['40em', '52em', '64em'],
   space: [0, 4, 8, 12, 16, 24, 32, 40],
@@ -26,12 +26,12 @@ export default {
     body: 'Open Sans, sans-serif, system-ui',
     heading: 'Open Sans, sans-serif, system-ui',
     secondary: 'Averia Sans Libre, cursive',
-    monospace: 'Menlo, monospace',
+    monospace: 'Menlo, monospace'
   },
   radii: [0, '5px', '8px', '12px'],
   opacity: [0, '20%', '40%', '60%', '80%', '100%'],
   shadows: {
     small: '0 0 4px rgba(0, 0, 0, .125)',
-    large: '0 0 24px rgba(0, 0, 0, .125)',
-  },
+    large: '0 0 24px rgba(0, 0, 0, .125)'
+  }
 };

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Button as RebassButton } from 'rebass/styled-components';
-import { propEq } from 'ramda';
 
 const BaseButton = styled(RebassButton).attrs({
   bg: 'neutral.white',
@@ -8,34 +7,30 @@ const BaseButton = styled(RebassButton).attrs({
   fontWeight: 'bold',
   p: 2,
   px: 3,
-  boxShadow: 'card',
+  boxShadow: 'card'
 })`
   cursor: pointer;
-  border-radius: ${p => p.theme.radii[1]};
+  border-radius: ${(p) => p.theme.radii[1]};
 `;
 
 const PrimaryButton = styled(BaseButton).attrs({
   bg: 'primary.normal',
-  color: 'neutral.white',
+  color: 'neutral.white'
 })``;
 
 const PrimaryOutlineButton = styled(BaseButton).attrs({
   bg: 'neutral.white',
-  color: 'primary.normal',
+  color: 'primary.normal'
 })`
-  box-shadow: inset 0 0 0 2px ${p => p.theme.colors.primary.normal};
+  box-shadow: inset 0 0 0 2px ${(p) => p.theme.colors.primary.normal};
 `;
-
-const variation = value => propEq('variation', value);
-
 
 const DefaultButton = (props) => {
   if (props.variation === 'primary-outline') {
-    return <PrimaryOutlineButton {...props} />
+    return <PrimaryOutlineButton {...props} />;
   }
 
-  return <PrimaryButton {...props} />
-}
+  return <PrimaryButton {...props} />;
+};
 
-
-export default DefaultButton
+export default DefaultButton;

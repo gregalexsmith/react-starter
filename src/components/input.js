@@ -16,7 +16,7 @@ const Input = styled(SystemInput).attrs({
   fontSize: 2,
   borderRadius: 1,
   border: '1px solid',
-  width: '50%',
+  width: '50%'
 })`
   display: block;
 `;

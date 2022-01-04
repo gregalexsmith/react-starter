@@ -6,7 +6,7 @@ const RouterLink = styled(Link)`
   text-decoration: none;
 
   :hover {
-    color: ${props => props.theme.colors.primary.dark};
+    color: ${(props) => props.theme.colors.primary.dark};
   }
 
   ${color}

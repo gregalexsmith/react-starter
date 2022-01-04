@@ -6,7 +6,7 @@ import { SingleColumn } from '../components';
 const DefaultLayout = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
-    render={matchProps => (
+    render={(matchProps) => (
       <>
         <SingleColumn bg="neutral.lightest">
           <Navigation />

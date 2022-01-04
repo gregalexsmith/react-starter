@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import smartOutline from 'smart-outline';
 
 import GlobalStyle from './styles/global';
-import theme from './styles/theme';
+import { theme } from './styles/theme';
 import Routes from './routes';
 import { logger } from './helpers';
 

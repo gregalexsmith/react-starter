@@ -1,6 +1,6 @@
 import { reject, isNil } from 'ramda';
 import * as analytics from './analytics';
-import devConsole from './dev-console';
+import * as devConsole from './dev-console';
 
 const init = () => {
   analytics.init();
@@ -17,7 +17,9 @@ export const track = (name, properties) => {
   devConsole.log('track', name, properties);
 };
 
-export default {
+const logger = {
   init,
-  page,
+  page
 };
+
+export default logger;

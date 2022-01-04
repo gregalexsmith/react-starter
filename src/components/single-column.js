@@ -8,8 +8,7 @@ const SingleColumn = ({ bg, height, children, className, ...rest }) => (
       {...rest}
       height={height}
       mx="auto"
-      width={[1, 0.8, 0.6]}
-    >
+      width={[1, 0.8, 0.6]}>
       {children}
     </Box>
   </Box>

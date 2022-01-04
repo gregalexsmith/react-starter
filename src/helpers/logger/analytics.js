@@ -13,9 +13,6 @@ export const init = () => {
   }
 };
 
-
-
-
 export const page = (...args) => verify() && window.analytics.page(...args);
 
 export const track = (...args) => verify() && window.analytics.track(...args);

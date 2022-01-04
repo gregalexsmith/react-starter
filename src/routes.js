@@ -1,12 +1,14 @@
 import React from 'react';
-import { Routes as ReactRoutes } from 'react-router-dom';
+import { Routes as ReactRoutes, Route } from 'react-router-dom';
 import DefaultLayout from './layouts/default';
 import { Home, About } from './pages';
 
 const Routes = () => (
   <ReactRoutes>
-    <DefaultLayout path="/" exact component={Home} />
-    <DefaultLayout path="/about" component={About} />
+    <Route path="/" element={<DefaultLayout />}>
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Route>
   </ReactRoutes>
 );
 

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Button as RebassButton } from 'rebass/styled-components';
-import { compose, branch, renderComponent } from 'recompose';
 import { propEq } from 'ramda';
 
 const BaseButton = styled(RebassButton).attrs({
@@ -29,7 +28,14 @@ const PrimaryOutlineButton = styled(BaseButton).attrs({
 
 const variation = value => propEq('variation', value);
 
-export default compose(
-  branch(variation('primary'), renderComponent(PrimaryButton)),
-  branch(variation('primary-outline'), renderComponent(PrimaryOutlineButton))
-)(PrimaryButton);
+
+const DefaultButton = (props) => {
+  if (props.variation === 'primary-outline') {
+    return <PrimaryOutlineButton {...props} />
+  }
+
+  return <PrimaryButton {...props} />
+}
+
+
+export default DefaultButton

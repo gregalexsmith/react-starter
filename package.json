@@ -1,8 +1,7 @@
 {
-  "name": "react-starter",
+  "name": "react-starter-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gregalexsmith.github.io/react-starter",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

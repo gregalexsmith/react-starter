@@ -6,20 +6,18 @@ const init = () => {
   analytics.init();
 };
 
-const page = (name, properties) => {
+const page = (name: string, properties?: Record<string, unknown>) => {
   const args = reject(isNil, [name, properties]);
   analytics.page(...args);
   devConsole.log('page', ...args);
 };
 
-export const track = (name, properties) => {
+export const track = (name: string, properties: Record<string, unknown>) => {
   analytics.track(name, properties);
   devConsole.log('track', name, properties);
 };
 
-const logger = {
+export const logger = {
   init,
   page
 };
-
-export default logger;

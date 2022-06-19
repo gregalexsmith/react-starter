@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Button as RebassButton } from 'rebass/styled-components';
+import styled from 'styled-components';
 
 const BaseButton = styled(RebassButton).attrs({
   bg: 'neutral.white',
@@ -26,6 +26,7 @@ const PrimaryOutlineButton = styled(BaseButton).attrs({
 `;
 
 const DefaultButton = (props) => {
+  // eslint-disable-next-line react/prop-types
   if (props.variation === 'primary-outline') {
     return <PrimaryOutlineButton {...props} />;
   }

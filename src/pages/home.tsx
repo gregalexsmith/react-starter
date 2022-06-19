@@ -2,14 +2,14 @@ import React from 'react';
 import { Heading, Box, Link } from '../components';
 import { useDocTitle, useLogPage } from '../helpers';
 
-function About() {
-  useLogPage('About');
-  useDocTitle('React Stater - About');
+export function Home() {
+  useLogPage('Home');
+  useDocTitle('React Stater - Home');
 
   return (
     <Box bg="neutral.white">
-      <Heading>About</Heading>
-      <p>For more information, please see the Github Readme:</p>
+      <Heading>Home</Heading>
+      <p>A simple react starter application with a few preferences set up.</p>
       <p>
         <Link href="https://github.com/gregalexsmith/react-starter">
           Github Repo
@@ -18,5 +18,3 @@ function About() {
     </Box>
   );
 }
-
-export default About;

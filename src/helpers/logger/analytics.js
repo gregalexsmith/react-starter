@@ -1,5 +1,6 @@
 const CLIENT_ID = 'CLIENT_ID';
 
+// eslint-disable-next-line no-undef
 const enabled = process.env.NODE_ENV === 'production';
 const present = !!window.analytics;
 

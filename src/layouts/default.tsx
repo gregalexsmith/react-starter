@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navigation } from '../features/app';
-import { SingleColumn } from '../components';
 import { Outlet } from 'react-router';
+import { SingleColumn } from '../components';
+import { Navigation } from '../features/app';
 
-const DefaultLayout = ({ children }) => (
+const DefaultLayout = () => (
   <>
     <SingleColumn bg="neutral.lightest">
       <Navigation />

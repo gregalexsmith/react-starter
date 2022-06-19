@@ -1,6 +1,6 @@
 export * from './rebass';
 export { default as Heading } from './heading';
-export { default as SingleColumn } from './single-column';
+export { SingleColumn } from './single-column';
 export { default as Button } from './button';
 export { default as Label } from './label';
 export { default as Input } from './input';

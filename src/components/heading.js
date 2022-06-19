@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Heading } from 'rebass/styled-components';
+import styled from 'styled-components';
 
 export default styled(Heading).attrs({
   color: 'primary',

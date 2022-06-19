@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const bg = (p) => p.theme.colors.background;
+const bg = (p: any) => p.theme.colors.background;
 
 export default createGlobalStyle`
   body {

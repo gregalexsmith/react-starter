@@ -1,15 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
+import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import smartOutline from 'smart-outline';
+import { ThemeProvider } from 'styled-components';
+// import smartOutline from 'smart-outline';
 
+import { logger } from './helpers';
+import Routes from './routes';
 import GlobalStyle from './styles/global';
 import { theme } from './styles/theme';
-import Routes from './routes';
-import { logger } from './helpers';
 
-smartOutline.init();
+// smartOutline.init();
 logger.init();
 
 const Root = () => (
@@ -23,4 +23,4 @@ const Root = () => (
   </React.StrictMode>
 );
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+render(<Root />, document.getElementById('root'));

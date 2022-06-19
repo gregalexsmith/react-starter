@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const enabled = process.env.NODE_ENV === 'development';
 
 export const log = (...args) => enabled && console.log('logger', ...args);

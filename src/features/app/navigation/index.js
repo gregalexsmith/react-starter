@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
+import styled from 'styled-components';
 import { RouterLink } from '../../../components';
 
 const Title = styled(Text).attrs({
@@ -19,6 +19,7 @@ const NavLink = styled(RouterLink).attrs({
   }
 `;
 
+// eslint-disable-next-line react/prop-types
 const Navigation = ({ showLinks = true }) => (
   <Flex alignItems="center">
     <Title>React Starter</Title>

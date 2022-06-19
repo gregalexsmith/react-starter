@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# local dependancies
+yalc.lock
+.yalc
+
 # testing
 /coverage
 

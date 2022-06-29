@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes as ReactRoutes, Route } from 'react-router-dom';
-import DefaultLayout from './layouts/default';
+import { DefaultLayout } from './layouts/default';
 import { Home, About } from './pages';
 
 const Routes = () => (

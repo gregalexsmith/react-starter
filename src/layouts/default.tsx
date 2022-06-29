@@ -1,17 +1,15 @@
 import React from 'react';
+import { SingleColumn } from '@gregalexsmith/components';
 import { Outlet } from 'react-router';
-import { SingleColumn } from '../components';
 import { Navigation } from '../features/app';
 
-const DefaultLayout = () => (
+export const DefaultLayout = () => (
   <>
-    <SingleColumn bg="neutral.lightest">
+    <SingleColumn classNameContainer="bg-neutral-100">
       <Navigation />
     </SingleColumn>
-    <SingleColumn bg="neutral.white" height="100%" pt={6}>
+    <SingleColumn fullHeight className="pt-6">
       <Outlet />
     </SingleColumn>
   </>
 );
-
-export default DefaultLayout;

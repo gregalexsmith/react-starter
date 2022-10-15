@@ -4,7 +4,6 @@ A starting point for React projects with a few things set up:
 
 Styling and Components:
 - [Tailwindcss](https://tailwindcss.com/)
-- [Styled Components](https://styled-components.com/)
 - [dev-tools component library](https://github.com/gregalexsmith/dev-tools/tree/main/packages/components#readme)
 
 Routing:
